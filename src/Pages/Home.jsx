@@ -8,6 +8,9 @@ import client2 from "../assets/client2.png"
 import { ourServices } from "../data/ourServices"
 import TimeLineSection from '../components/HomePage/TimeLineSection';
 import Footer from './Footer';
+import OurProduct from '../components/HomePage/OurProduct';
+import Contact from '../components/HomePage/Contact';
+
 
 
 
@@ -15,7 +18,8 @@ const Home = () => {
     return (
         <>
             <div className='text-[#FFFFFF] px-20 max-w-max mt-14 flex pb-10 flex-col gap-14 relative '>
-
+                <div className='shape1'></div>
+                <div className='shape2'></div>
                 <div className='flex flex-col gap-1'>
                     <p className='text-sm'>
                         5 star overall rating
@@ -102,7 +106,7 @@ const Home = () => {
                                 >
                                     <h1 className='text-[#000000] mb-4 border-b-[3px] border-[#FE5D15] text-xl'>
                                         {item.title}
-                                        </h1>
+                                    </h1>
 
                                     <p className='text-[#898989] text-sm'>
                                         {item.description}
@@ -122,12 +126,28 @@ const Home = () => {
             </div>
 
             <div className='bg-[#FFFFFF] px-20 flex gap-14 flex-col items-center'>
-            <p className='text-[#000000] text-4xl'>Our Approach</p>
+                <p className='text-[#000000] text-4xl'>Our Approach</p>
 
-            <TimeLineSection/>
+                <TimeLineSection />
             </div>
 
-            <Footer/>
+
+            <div className='bg-[#FFFFFF] px-20  flex  gap-14 flex-col items-center'>
+                <p className='text-[#000000] text-4xl'>Our Products</p>
+
+                <OurProduct />
+            </div>
+
+
+            <div className='bg-[#FFFFFF] px-20  flex  gap-14 flex-col items-center'>
+                <p className='text-[#000000] text-4xl'>Contact us</p>
+
+                <Contact/>
+
+                
+            </div>
+
+            <Footer />
         </>
     )
 }

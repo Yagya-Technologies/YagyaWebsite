@@ -1,0 +1,45 @@
+
+
+.shape1{
+    width: 200px;
+    height: 200px;
+    top:-20px;
+   
+    right: -380px;
+    border-radius: 9999px;
+    background-color: #9747FF;
+   filter: blur(100px);
+    animation: one 10s infinite ;
+    position: absolute;
+}
+
+
+
+.shape2{
+    width: 200px;
+    position: absolute;
+    top: 180px;
+    right: -420px;
+    height: 200px;
+    border-radius: 9999px;
+    filter: blur(100px);
+    background-color: #FE5D15;
+}
+
+@keyframes one {
+    0%{
+        right: 0px;
+        top: 0px;
+    }
+ 
+    50%{
+        right:20px;
+        top: 15px;;
+    }
+    
+    100%{
+        right: 15px;
+        top: 20px;
+    }
+}
+
