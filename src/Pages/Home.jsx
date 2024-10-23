@@ -18,9 +18,9 @@ import NavBar from './NavBar';
 const Home = () => {
     return (
         <>
-        <NavBar/>
+        <NavBar bgcolor={`bg-[#10161E]`} textstyle={`text-[#ffff]`} />
       
-            <div className='text-[#FFFFFF]  px-20 max-w-max mt-14 flex pb-10 flex-col gap-14 relative '>
+            <div className='text-[#FFFFFF] bg-[#10161E]   px-20 py-14  flex pb-10 flex-col gap-14 relative '>
                 <div className='shape1'></div>
                 <div className='shape2'></div>
                 <div className='flex flex-col gap-1'>
@@ -150,7 +150,7 @@ const Home = () => {
                 
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

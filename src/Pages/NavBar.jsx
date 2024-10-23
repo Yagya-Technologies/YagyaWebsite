@@ -2,16 +2,16 @@ import React from 'react'
 import logo from "../assets/logo.png"
 import { Link } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({bgcolor, textstyle}) => {
     return (
-        <div className='w-full  px-20 h-20 flex  items-center justify-between'>
+        <div className={`w-full  px-20 h-20 flex  items-center justify-between ${bgcolor}`}>
             <img
                 src={logo}
                 alt='logo'
                 className='w-[29px] h-[40px]'
             />
             <ul 
-            className='text-[#FFFFFF] flex gap-8 text-sm'
+            className={` flex gap-8 text-sm ${textstyle}`}
             >
                 <li>
                     <Link to="/about">
