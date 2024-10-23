@@ -10,6 +10,7 @@ import TimeLineSection from '../components/HomePage/TimeLineSection';
 import Footer from './Footer';
 import OurProduct from '../components/HomePage/OurProduct';
 import Contact from '../components/HomePage/Contact';
+import NavBar from './NavBar';
 
 
 
@@ -17,7 +18,9 @@ import Contact from '../components/HomePage/Contact';
 const Home = () => {
     return (
         <>
-            <div className='text-[#FFFFFF] px-20 max-w-max mt-14 flex pb-10 flex-col gap-14 relative '>
+        <NavBar bgcolor={`bg-[#10161E]`} textstyle={`text-[#ffff]`} />
+      
+            <div className='text-[#FFFFFF] bg-[#10161E]   px-20 py-14  flex pb-10 flex-col gap-14 relative '>
                 <div className='shape1'></div>
                 <div className='shape2'></div>
                 <div className='flex flex-col gap-1'>
@@ -147,7 +150,7 @@ const Home = () => {
                 
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
