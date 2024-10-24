@@ -5,8 +5,8 @@ import frame from "../assets/contact.jpg"
 const About = () => {
   return (
    <>
-   <NavBar/>
-   <div className=' pt-14 pb-44 px-32 relative flex flex-col  gap-14'>
+   <NavBar textstyle={"text-[#000000]"} />
+   <div className=' pt-14 pb-44 md:px-32 px-10 relative flex flex-col  gap-14'>
     <p className='text-[#000000] text-4xl text-center '>
         About us
     </p>
@@ -34,7 +34,7 @@ const About = () => {
     <img
     src={frame}
     alt=''
-    className='absolute w-[480px] -rotate-45 -right-[300px] top-[365px] z-10'
+    className='md:absolute hidden w-[480px] -rotate-45 -right-[300px] top-[365px] z-10'
     />
 
 

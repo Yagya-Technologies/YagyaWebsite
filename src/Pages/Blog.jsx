@@ -74,16 +74,15 @@ const Blog = () => {
 
     return (
         <>
-            <NavBar />
+<NavBar textstyle={"text-[#000000]"} />
 
-
-            <div className='bg-[#FFFFFF]  pb-20 px-20 flex flex-col z-50 items-center justify-center '>
+            <div className='bg-[#FFFFFF]  pb-20 md:px-20 px-6 flex flex-col z-50 items-center justify-center '>
 
                 <h1 className='text-[#000000]  text-4xl'>
                     Blogs and videos
                 </h1>
 
-                <div className='flex flex-row mt-5 gap-28'>
+                <div className='flex lg:flex-row flex-col mt-5 gap-14 lg:gap-28'>
                     <div className='flex flex-col '>
                         <div className='flex flex-col'>
                             <h2 className='text-[#000000] text-3xl'>Blogs</h2>
@@ -100,12 +99,12 @@ const Blog = () => {
                                     // const body = post.body.substring(0,100)
                                     return (
                                         <div key={post.slug.current}
-                                            className='flex gap-5'
+                                            className='flex md:flex-row flex-col gap-5'
                                         >
                                             <div>
                                                 <img src={post.mainImage.asset.url}
                                                     alt={post.mainImage.alt}
-                                                    className='w-[221px] h-[230px] rounded-md' />
+                                                    className='md:w-[221px]  h-[230px] rounded-md' />
                                             </div>
 
                                             <div className='flex flex-col'>
@@ -160,7 +159,7 @@ const Blog = () => {
 
 
 
-                            <Link to={"/all-blogs"} className='text-[#898989] text-[20px] underline ml-[270px]' >
+                            <Link to={"/all-blogs"} className='text-[#898989] text-[20px] underline md:ml-[270px]' >
                                 Load all
                             </Link>
 
@@ -171,7 +170,7 @@ const Blog = () => {
 
 
                     </div>
-                    <div className='bg-[#473BF0]  mt-14 z-50 relative gap-2 p-8 flex flex-col rounded-[8px] w-[324px] h-[400px]'>
+                    <div className='bg-[#473BF0]  mt-14 z-50 relative gap-2 p-8 flex flex-col rounded-[8px] lg:w-[324px] h-[400px]'>
                         <p className='text-[#FFFFFF] z-10 text-4xl'>
                             Interested to work with us?
                         </p>
@@ -200,7 +199,7 @@ const Blog = () => {
             </div>
 
 
-            <div className='flex px-20 mb-52 flex-col  '>
+            <div className='flex md:px-20 px-6 md:mb-52 mb-40 flex-col  '>
                 <div className='flex mb-20 flex-col'>
                     <h2 className='text-[#000000] text-3xl'>Our Recent Videos</h2>
                     <div className='w-[406px] h-[3px] bg-[#FE5D15]'></div>
@@ -208,7 +207,7 @@ const Blog = () => {
 
                 </div>
 
-                <div className='flex gap-10'>
+                <div className='flex md:flex-row flex-col gap-10'>
 
                     {
                         recentVideo.map((video,i)=>(
