@@ -6,9 +6,9 @@ import { FaFacebook, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className='px-20 bg-[#10161E]  z-50 text-[#FFFFFF] pb-5 pt-[132px]'>
+        <div className='md:px-20 px-6 bg-[#10161E]   z-50 text-[#FFFFFF] pb-5 pt-[132px]'>
 
-            <div className='grid grid-cols-5 gap-7 border-b-[1px] border-[#898989] pb-20'>
+            <div className='grid lg:grid-cols-5  md:grid-cols-2 grid-cols-1 gap-7 border-b-[1px] border-[#898989] pb-20'>
                 <div>
                     <img
                         src={logo}
@@ -92,7 +92,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='flex text-[#898989]  mt-20 justify-between'>
+            <div className='flex md:flex-row flex-col text-[#898989]  mt-20 gap-2 md:justify-between'>
 
                 <p className=''>
                     &copy;2024 yagya.tech All rights reserves

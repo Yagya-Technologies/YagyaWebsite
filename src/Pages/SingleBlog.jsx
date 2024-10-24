@@ -49,9 +49,9 @@ const SingleBlog = () => {
     return (
         <>
 
-            <NavBar />
+<NavBar textstyle={"text-[#000000]"} />
 
-            <section className='bg-[#FFFFFF] gap-10 pb-20 flex flex-col py-14 px-20  justify-center '>
+            <section className='bg-[#FFFFFF] gap-10 pb-20 flex flex-col py-14 md:px-20 px-10  justify-center '>
 
                 <h1 className='text-[#000000]  text-4xl'>
                     {singleBlog.title}

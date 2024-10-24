@@ -20,7 +20,7 @@ const Home = () => {
         <>
         <NavBar bgcolor={`bg-[#10161E]`} textstyle={`text-[#ffff]`} />
       
-            <div className='text-[#FFFFFF] bg-[#10161E]   px-20 py-14  flex pb-10 flex-col gap-14 relative '>
+            <div className='text-[#FFFFFF] bg-[#10161E] px-6  md:px-20 py-14  flex pb-10 flex-col gap-14 relative '>
                 <div className='shape1'></div>
                 <div className='shape2'></div>
                 <div className='flex flex-col gap-1'>
@@ -78,7 +78,7 @@ const Home = () => {
 
                     </div>
 
-                    <p className='text-[#898989] my-5 w-[500px] text-sm'>
+                    <p className='text-[#898989] my-5 md:w-[500px] text-sm'>
                         "Thank you, Yagya InfoTech, for creating an incredible website for my business! Your professionalism, creativity, and attention to detail made the process seamless, and the final result exceeded my expectations. I highly recommend your web design services!"
                     </p>
 
@@ -96,11 +96,11 @@ const Home = () => {
 
 
 
-            <div className='bg-[#FFFFFF] px-20 py-14 flex gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] px-6 md:px-20 py-14 flex gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Services</p>
 
 
-                <div className='grid grid-cols-3 gap-x-20 gap-y-10'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-20 gap-y-10'>
                     {
                         ourServices.map((item, index) => {
                             return (
@@ -128,21 +128,21 @@ const Home = () => {
 
             </div>
 
-            <div className='bg-[#FFFFFF] px-20 flex gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] md:px-20 px-6 flex gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Approach</p>
 
                 <TimeLineSection />
             </div>
 
 
-            <div className='bg-[#FFFFFF] px-20  flex  gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] md:px-20 px-6  flex  gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Products</p>
 
                 <OurProduct />
             </div>
 
 
-            <div className='bg-[#FFFFFF] px-20  flex  gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] md:px-20 px-6 flex  gap-14 flex-col  items-center'>
                 <p className='text-[#000000] text-4xl'>Contact us</p>
 
                 <Contact/>

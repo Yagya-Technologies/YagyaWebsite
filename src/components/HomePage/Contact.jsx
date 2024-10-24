@@ -15,11 +15,11 @@ const Contact = () => {
     }
 
     return (
-        <div className='flex  mb-20 gap-14'>
+        <div className=' flex  mb-20 gap-14'>
             <img
                 src={contact}
                 alt=''
-                className='w-[561px] h-[567px]'
+                className='w-[561px] hidden lg:flex h-[567px]'
             />
 
             <form
@@ -39,7 +39,7 @@ const Contact = () => {
                         name='name'
                         placeholder="Enter your name"
                         {...register("name", { required: true })}
-                        className=' w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
+                        className=' md:w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
                     />
                     {errors.name &&
                         <span className="-mt-1 text-[12px] text-[#FE5D15]">
@@ -63,7 +63,7 @@ const Contact = () => {
                         name='email'
                         placeholder="Enter your email address"
                         {...register("email", { required: true })}
-                        className=' w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
+                        className=' md:w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
                     />
                     {errors.email &&
                         <span className="-mt-1 text-[12px] text-[#FE5D15]">
@@ -86,7 +86,7 @@ const Contact = () => {
                         name='subject'
                         placeholder="What do you want to talk about"
                         {...register("subject", { required: true })}
-                        className=' w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
+                        className=' md:w-[503px] h-[39px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
                     />
                     {errors.subject &&
                         <span className="-mt-1 text-[12px] text-[#FE5D15]">
@@ -111,7 +111,7 @@ const Contact = () => {
                         rows="7"
                         placeholder="Enter your message here"
                         {...register("message", { required: true })}
-                        className=' w-[503px] h-[182px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
+                        className=' md:w-[503px] h-[182px] flex justify-center pl-4 border-[1px] rounded-[4px] border-[#D9D9D9]'
                     />
 
 

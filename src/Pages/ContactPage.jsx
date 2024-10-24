@@ -5,9 +5,9 @@ import NavBar from './NavBar'
 const ContactPage = () => {
   return (
   <>
-  <NavBar/>
+  <NavBar textstyle={"text-[#000000]"} />
  
-    <div className='px-20   py-14'>
+    <div className='md:px-20 px-10  py-14'>
     <h1 className='text-3xl mb-5'>Contact Us</h1>
       
         <Contact/>

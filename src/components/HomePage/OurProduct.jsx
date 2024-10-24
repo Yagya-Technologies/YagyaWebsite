@@ -7,9 +7,9 @@ import product3 from "../../assets/product3.png"
 
 const OurProduct = () => {
   return (
-    <div className='flex mb-20  gap-7 text-[#FFFFFF]'>
+    <div className='flex md:flex-row flex-col mb-20  gap-7 text-[#FFFFFF]'>
 
-        <div className='flex flex-col bg-[#473BF0] w-[55%] pt-10 p-2 rounded-[16px]'>
+        <div className='flex flex-col bg-[#473BF0] md:w-[55%] pt-10 p-2 rounded-[16px]'>
             <p className='text-2xl ml-4'>
             5k+ daily active users
             </p>
