@@ -16,12 +16,16 @@ const NavBar = ({ bgcolor, textstyle }) => {
 
     return (
         <>
-            <div className={`w-full hidden md:flex px-20 h-20   items-center justify-between ${bgcolor}`}>
+            <div className={`w-full hidden md:flex px-20 h-20 relative  items-center justify-between ${bgcolor}`}>
+                <Link to="/">
+
                 <img
                     src={logo}
                     alt='logo'
                     className='w-[29px] h-[40px]'
                 />
+                </Link>
+               
                 <ul
                     className={` flex gap-8 text-sm ${textstyle}`}
                 >

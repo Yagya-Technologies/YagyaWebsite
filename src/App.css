@@ -7,13 +7,11 @@
    
     right: -380px;
     border-radius: 9999px;
-    background-color: #9747FF;
+    background-color: rgb(151, 71, 255);
    filter: blur(100px);
     animation: one 10s infinite ;
     position: absolute;
 }
-
-
 
 .shape2{
     width: 200px;
@@ -23,7 +21,7 @@
     height: 200px;
     border-radius: 9999px;
     filter: blur(100px);
-    background-color: #FE5D15;
+    background-color: rgb(254, 93, 21);
 }
 
 @keyframes one {
@@ -43,3 +41,17 @@
     }
 }
 
+
+
+
+.fullscreen-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+   
+    z-index: 100; /* Ensure high stacking order */
+  }
+  

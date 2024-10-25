@@ -86,6 +86,8 @@ const SingleBlog = () => {
                 </div>
 
             </section>
+
+        
         </>
     )
 }

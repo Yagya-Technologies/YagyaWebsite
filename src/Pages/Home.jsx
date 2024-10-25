@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react';
 import ReactStars from "react-rating-stars-component";
 import { FaStar } from "react-icons/fa"
 import Button from '../components/common/Button';
@@ -7,20 +7,29 @@ import client1 from "../assets/client1.png"
 import client2 from "../assets/client2.png"
 import { ourServices } from "../data/ourServices"
 import TimeLineSection from '../components/HomePage/TimeLineSection';
-import Footer from './Footer';
 import OurProduct from '../components/HomePage/OurProduct';
 import Contact from '../components/HomePage/Contact';
 import NavBar from './NavBar';
+import AnimateCursor from '../components/HomePage/AnimatedCursor';
+import CanvasAnimation from '../components/HomePage/CanvasAnimation';
 
 
 
 
 const Home = () => {
+
+
     return (
         <>
+
+        {/* <CanvasAnimation/> */}
+        
         <NavBar bgcolor={`bg-[#10161E]`} textstyle={`text-[#ffff]`} />
+
+
+        {/* <AnimateCursor/> */}
       
-            <div className='text-[#FFFFFF] bg-[#10161E] px-6  md:px-20 py-14  flex pb-10 flex-col gap-14 relative '>
+            <div className='text-[#FFFFFF]  bg-[#10161E] px-6  md:px-20 py-14  flex pb-10 flex-col gap-14 relative '>
                 <div className='shape1'></div>
                 <div className='shape2'></div>
                 <div className='flex flex-col gap-1'>
@@ -96,7 +105,7 @@ const Home = () => {
 
 
 
-            <div className='bg-[#FFFFFF] px-6 md:px-20 py-14 flex gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] px-6 md:px-20 py-14 relative flex gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Services</p>
 
 
@@ -128,21 +137,21 @@ const Home = () => {
 
             </div>
 
-            <div className='bg-[#FFFFFF] md:px-20 px-6 flex gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] relative md:px-20 px-6 flex gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Approach</p>
 
                 <TimeLineSection />
             </div>
 
 
-            <div className='bg-[#FFFFFF] md:px-20 px-6  flex  gap-14 flex-col items-center'>
+            <div className='bg-[#FFFFFF] md:px-20 px-6 relative  flex  gap-14 flex-col items-center'>
                 <p className='text-[#000000] text-4xl'>Our Products</p>
 
                 <OurProduct />
             </div>
 
 
-            <div className='bg-[#FFFFFF] md:px-20 px-6 flex  gap-14 flex-col  items-center'>
+            <div className='bg-[#FFFFFF] md:px-20 px-6 flex relative gap-14 flex-col  items-center'>
                 <p className='text-[#000000] text-4xl'>Contact us</p>
 
                 <Contact/>
@@ -154,6 +163,8 @@ const Home = () => {
         </>
     )
 }
+
+
 
 export default Home
 
