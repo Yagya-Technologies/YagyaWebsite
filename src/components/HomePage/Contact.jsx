@@ -15,7 +15,7 @@ const Contact = () => {
     }
 
     return (
-        <div className=' flex  mb-20 gap-14'>
+        <div className=' flex relative  mb-20 gap-14'>
             <img
                 src={contact}
                 alt=''
